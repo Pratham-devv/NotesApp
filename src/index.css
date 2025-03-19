@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@layer base{
+  input, button, select, textarea, option, optgroup, progress, meter{all:revert;}
+}
