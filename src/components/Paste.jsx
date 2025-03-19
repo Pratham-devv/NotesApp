@@ -8,8 +8,10 @@ const Paste = () => {
   const pastes = useSelector((state) => state.paste.pastes);
   const [searchPaste, setSearchPaste] = useState("");
   const dispatch = useDispatch();
+
+  const baseUrl = window.location.origin;
   const sharePaste = (pasteId) => {
-    const shareLink = `http://localhost:5173/paste/${pasteId}`;
+    const shareLink = `${baseUrl}/paste/${pasteId}`;
     navigator.clipboard.writeText(shareLink);
     alert("Share link copied: " + shareLink);
   };
