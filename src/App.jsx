@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import NavBar from "./components/navBar"
-import Home from "./components/home"
+import NavBar from "./components/NavBar-temp"
+import Home from "./components/Home"
 import Paste from "./components/Paste"
 import ViewPaste from "./components/ViewPaste"
 
